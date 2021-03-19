@@ -1,0 +1,72 @@
+.firstview {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    @include tab {
+        position: relative;
+    }
+}
+
+.fv-text {
+    width: 46%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    @include tab {
+        width: 288px;
+        height: 118px;
+        background-color: rgba($color: #fff, $alpha: 0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .key-message {
+        width: 326px;
+        height: 38px;
+        text-align: center;
+        position: absolute;
+        top: 37%;
+        right: 18%;
+        @include tab {
+            width: 197px;
+            height: 23px;
+            color: #fff;
+            font-size: 2.3rem;
+            position: unset;
+            margin: 0 auto;
+        }
+    }
+    .catchcopy {
+        width: 390px;
+        height: 128px;
+        text-align: center;
+        position: absolute;
+        top: 48%;
+        right: 18%;
+        font-family: "Monotype Corsiva";
+        font-size: 3.8rem;
+        @include tab {
+            width: 288px;
+            height: 95px;
+            color: #fff;
+            position: unset;
+        }
+    }
+}
+
+
+.fv-img {
+    width: 54%;
+    height: 100vh;
+    background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x.png);
+    background-size: cover;
+    background-position: left;
+    @include tab {
+        width: 100%;
+    }
+}
+// height: 597px;
